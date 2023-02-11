@@ -11,7 +11,7 @@ def ask():
 st.header("ChatGPT老胡模拟器")
 prompt = ask()
 if prompt:
-	chatbot.ask("")
+	chatbot.ask("你好")
 	output = chatbot.ask(prompt)["choices"][0]["text"]
 	st.write(output)
 	chatbot.reset()
