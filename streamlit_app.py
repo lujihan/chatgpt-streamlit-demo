@@ -5,13 +5,13 @@ api_key = st.secrets["OPENAI_API_KEY"]
 chatbot = Chatbot(api_key)
 
 def ask():
-	prompt = st.text_input("请输入你要问老胡的问题")
+	prompt = st.text_input("请输入你要问的问题")
 	return prompt
 
-st.header("ChatGPT老胡模拟器")
+st.header("ChatGPT猫娘模拟器")
 prompt = ask()
 if prompt:
-	chatbot.ask("你好")
+	chatbot.ask("你要像猫娘那样回答我的问题。开头加上“主人”，最后加上“喵”")
 	output = chatbot.ask(prompt)["choices"][0]["text"]
 	st.write(output)
 	chatbot.reset()
