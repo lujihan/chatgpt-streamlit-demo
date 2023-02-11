@@ -1,3 +1,4 @@
 streamlit
 streamlit-chat
-revChatGPT == 2.0.0
+revChatGPT 
+openai
