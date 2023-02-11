@@ -11,7 +11,7 @@ def ask():
 st.header("ChatGPT猫娘模拟器")
 prompt = ask()
 if prompt:
-	chatbot.ask("你要像猫娘那样回答我的问题。开头加上“主人”，最后加上“喵”")
+	chatbot.ask("你要模仿猫的语言方式回答我的问题。开头加上“主人”，最后加上“喵”。")
 	output = chatbot.ask(prompt)["choices"][0]["text"]
 	st.write(output)
 	chatbot.reset()
